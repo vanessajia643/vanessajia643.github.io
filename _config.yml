@@ -7,17 +7,16 @@ github: [metadata]
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Luyuan
 middle_name:
-last_name: jia
+last_name: Jia
 email: ljia@hks.harvard.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Vanessa's personal website
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://vanessajia643.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -30,12 +29,12 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: graywhite # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: nord # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+  theme_light: oldie # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: nord # https://github.com/ryo-ma/github-profile-trophy
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -51,9 +50,9 @@ rss_icon: true
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
-socials_in_search: true
-bib_search: true
+search_enabled: false
+socials_in_search: false
+bib_search: false
 
 # Dimensions
 max_width: 930px
@@ -195,19 +194,19 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /:collection/:title/
   projects:
-    output: true
+    output: false
     permalink: /:collection/:title/
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -398,14 +397,16 @@ external_links:
 
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
+# MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  # executable: "C:\\Program Files\\ImageMagick-7.1.1-Q16\\magick.exe"
+  enabled: true  
   widths:
     - 480
     - 800
     - 1400
   input_directories:
-    - assets/img/
+    - "assets/img/"  # Use Windows backslashes
   input_formats:
     - ".jpg"
     - ".jpeg"
@@ -413,7 +414,7 @@ imagemagick:
     - ".tiff"
     - ".gif"
   output_formats:
-    webp: "-quality 85"
+    webp: "-resize %wx -quality 85"  # Add resize parameter
 
 # Lazy loading images
 #   If you enable lazy loading, all images will add the loading="lazy" attribute.
@@ -421,7 +422,7 @@ imagemagick:
 #   You can also set loading="" to other values for specific images to override the default behavior.
 #   Options: "auto", "eager", "lazy"
 #   See https://web.dev/browser-level-image-lazy-loading/ for more information.
-lazy_loading_images: true # enables lazy loading of images (recommended)
+lazy_loading_images: false # enables lazy loading of images (recommended)
 
 # -----------------------------------------------------------------------------
 # Optional Features

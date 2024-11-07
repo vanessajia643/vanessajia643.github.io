@@ -1,5 +1,28 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+---
+layout: about
+title: about
+permalink: /
+subtitle: 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+profile:
+  align: left
+  image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>Harvard Kennedy School</p>
+    <p>Cambridge, MA</p>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
+---
+<br />
+
+
+Hi there! :wave: My name is Luyuan (go by Vanessa) Jia, a research fellow working with Professor [Marcella Alsan](https://scholar.harvard.edu/alsan/home) at the [Health Inequality lab](https://www.healthinequalitylab.org/) in Harvard Kennedy School. My current research interest focues on industrial organization and health economics. Specicially, I'm passionate about exploring the intricate ways in which diverse health policies impact people's well-being through different health markets, and how those policies are formed.
+
+Prior to this position, I obtained my bachelor's degree in economics in 2023 at [Tsinghua University](https://www.tsinghua.edu.cn/en/). In Spring 2022, I've also been to UC Berkeley as an exchange student, where I worked with Professor [Nick Tsivanidis](https://www.nicktsivanidis.com/) on implementing machine learning tools in development economic research.
+
+**Research Interest** : Industrial Organization, Health Economics, and Public Economics
+
+**Email**: [ljia@hks.harvard.edu](mailto:ljia@hks.harvard.edu)
