@@ -26,8 +26,6 @@ nav_order: 2
 - **Professor Nick Tsivanidis**, UC Berkeley, CA  <span style="float: right; margin-right: 20px;"> Jan 2022 - Jun 2023   </span>
 <br />
 
-- **Professor Nick Tsivanidis**, UC Berkeley, CA  <span style="float: right; margin-right: 20px;"> Jan 2022 - Jun 2023   </span>
-<br />
 
 - **Professor Chenyuan Liu**, Tsinghua University, China  <span style="float: right; margin-right: 20px;"> Jun 2022 - Jun 2023   </span>
 <br />
