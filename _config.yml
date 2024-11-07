@@ -260,7 +260,7 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
+  # - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
@@ -400,7 +400,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick
 imagemagick:
   # executable: "C:\\Program Files\\ImageMagick-7.1.1-Q16\\magick.exe"
-  enabled: true  
+  enabled: false  
   widths:
     - 480
     - 800
